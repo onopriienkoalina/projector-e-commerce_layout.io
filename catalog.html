@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="wrapper">
+       <header class="header__row container">
+        <nav class="header__menu">
+            <div class="menu__burger">
+                <input id="menu__toggle" type="checkbox" />
+                <label class="menu__btn" for="menu__toggle">
+                  <span></span>
+                </label>
+                <ul class="menu__body">
+                    <li><a href="#popup__main" class="menu__item">Каталог</a></li>
+                    <li><a href="" class="menu__item">Знижки</a></li>
+                    <li><a href="" class="menu__item">Блог</a></li>
+                    <li><a href="" class="menu__item">Про нас</a></li>
+                </ul>
+        </nav>
+        <div class="header__logo logo">
+            <img src="./images/logo.svg" alt="">
+        </div>
+        <div class="header__column">
+            <div class="column__language">
+                <a href="#">UA</a>
+            </div>
+            <div class="column__currency">
+                <a href="#"><img src="./images/currensy.svg" alt=""></a>
+            </div>
+            <div class="column__telephone">
+                <a href="callto:+380978889292">+38 097 888 92 92</a>
+            </div>
+            <label class="column__search">
+                <a href="#"><img src="./images/search.svg" alt="search"></a>
+                <input class="search__txt" type="text" name="search" placeholder=""/>
+            </label>
+            <div class="column__cart">
+                <a href="cart.html"><img src="./images/cart.svg" alt="" class="cart__img"></a>            
+            </div>
+        </div>
+    </header>
+       <nav class="breadcrumbs container">
+        <ul class="breadcrumbs__list">
+            <li class="breadcrumbs__item"><a href="main.html">Головна</a></li>
+            <li class="breadcrumbs__item"><a href="#">Жінкам</a></li>
+            <li class="breadcrumbs__item"><a href="">Жіночі вишиванки</a></li>
+        </ul>
+    </nav>
+    <div class="catalog__page">
+        <aside class="catalog__filter container">
+                <details class="filter__item-320">
+                    <summary class="filter__name-320">Фільтри
+                    </summary>
+                    <div class="filter__item-container">
+                <details class="filter__item">
+                    <summary class="filter__name filter__tittle-320 filter__name-order_1">Розмір
+                    </summary>
+                    <label class="filter__label filter__label-320" for="filterXxs">
+                        <input class="filter__mark" type="checkbox" name="filter" id="filterXxs" >
+                        <span class="filter__label-text">32 | XXS (53)</span>
+                    </label>
+                    <label class="filter__label filter__label-320" for="filterXs">
+                        <input class="filter__mark" type="checkbox" name="filter" id="filterXs" >
+                        <span class="filter__label-text">34 | XS (60)</span>
+                    </label>
+                    <label class="filter__label filter__label-320" for="filterS">
+                        <input class="filter__mark" type="checkbox" name="filter" id="filterS">
+                        <span class="filter__label-text">36 | S (60)</span>
+                    </label>
+                    <label class="filter__label filter__label-320" for="filterM">
+                        <input class="filter__mark" type="checkbox" name="filter" id="filterM">
+                        <span class="filter__label-text">38 | M (60)</span>
+                    </label>
+                    <label class="filter__label filter__label-320" for="filterL">
+                        <input class="filter__mark" type="checkbox" name="filter" id="filterL">
+                        <span class="filter__label-text">40 | L (60)</span>
+                    </label>
+                    <label class="filter__label filter__label-320" for="filterXl">
+                        <input class="filter__mark" type="checkbox" name="filter" id="filterXl">
+                        <span class="filter__label-text">42 | XL (58)</span>
+                    </label>
+                    <label class="filter__label filter__label-320" for="filterXxl">
+                        <input class="filter__mark" type="checkbox" name="filter" id="filterXxl">
+                        <span class="filter__label-text">46 | XXL (13)</span>
+                    </label>
+                    <label class="filter__label filter__label-320" for="filterXxxl">
+                        <input class="filter__mark" type="checkbox" name="filter" id="filterXxxl">
+                        <span class="filter__label-text">48 | XХXL (4)</span>
+                    </label>
+                  </details>
+                <details class="filter__item">
+                    <summary class="filter__name filter__tittle-320 filter__name-order_2">Колір</summary>
+                    <label class="filter__label filter__label-320" for="filterWhite">
+                        <input class="filter__mark" type="checkbox" name="filter" id="filterWhite" >
+                        <span class="filter__label-text">білий</span>
+                    </label>
+                    <label class="filter__label filter__label-320" for="filterBlack">
+                        <input class="filter__mark" type="checkbox" name="filter" id="filterBlack" >
+                        <span class="filter__label-text">чорний</span>
+                    </label>
+                    <label class="filter__label filter__label-320" for="filterBeige">
+                        <input class="filter__mark" type="checkbox" name="filter" id="filterBeige">
+                        <span class="filter__label-text">бежевий</span>
+                    </label>
+                    <label class="filter__label filter__label-320" for="filterGreen">
+                        <input class="filter__mark" type="checkbox" name="filter" id="filterGreen">
+                        <span class="filter__label-text">зелений</span>
+                    </label>
+                    <label class="filter__label filter__label-320" for="filterBlue">
+                        <input class="filter__mark" type="checkbox" name="filter" id="filterBlue">
+                        <span class="filter__label-text">синій</span>
+                    </label>
+                  </details>  
+                <details class="filter__item">
+                    <summary class="filter__name filter__tittle-320 filter__name-order_3">Сезон</summary>
+                    <label class="filter__label filter__label-320" for="easy">
+                        <input class="filter__mark" type="checkbox" name="filter" id="easy">
+                        <span class="filter__label-text">Easy collection (3)</span>
+                    </label>
+                    <label class="filter__label filter__label-320" for="all">
+                        <input class="filter__mark" type="checkbox" name="filter" id="all">
+                        <span class="filter__label-text">Усі сезони (46)</span>
+                    </label>
+                  </details>  
+                <details class="filter__item">
+                    <summary class="filter__name filter__tittle-320 filter__name-order_4">Тканина</summary>
+                    <label class="filter__label filter__label-320" for="linen">
+                        <input class="filter__mark" type="checkbox" name="filter" id="linen">
+                        <span class="filter__label-text">Льон (60)</span>
+                    </label>
+                    <label class="filter__label filter__label-320" for="sateen">
+                        <input class="filter__mark" type="checkbox" name="filter" id="sateen">
+                        <span class="filter__label-text">Сатин (1)</span>
+                    </label>
+                  </details>  
+                <details class="filter__item">
+                    <summary class="filter__name filter__tittle-320 filter__name-order_5">Рукав</summary>
+                    <label class="filter__label filter__label-320" for="long">
+                        <input class="filter__mark" type="checkbox" name="filter" id="long">
+                        <span class="filter__label-text">Довгий рукав (49)</span>
+                    </label>
+                    <label class="filter__label filter__label-320" for="half">
+                        <input class="filter__mark" type="checkbox" name="filter" id="half">
+                        <span class="filter__label-text">3/4 рукав (11)</span>
+                    </label>
+                  </details> 
+                  </details>
+        </aside>
+        <aside class="catalog__filter-320 container">
+                <div class="filter__item-container">
+            <details class="filter__item">
+                <summary class="filter__name filter__name-order_1">Розмір
+                </summary>
+                <label class="filter__label" for="filterXxs-320">
+                    <input class="filter__mark" type="checkbox" name="filter" id="filterXxs-320" >
+                    <span class="filter__label-text">32 | XXS (53)</span>
+                </label>
+                <label class="filter__label" for="filterXs-320">
+                    <input class="filter__mark" type="checkbox" name="filter" id="filterXs-320">
+                    <span class="filter__label-text">34 | XS (60)</span>
+                </label>
+                <label class="filter__label" for="filterS-320">
+                    <input class="filter__mark" type="checkbox" name="filter" id="filterS-320">
+                    <span class="filter__label-text">36 | S (60)</span>
+                </label>
+                <label class="filter__label" for="filterM-320">
+                    <input class="filter__mark" type="checkbox" name="filter" id="filterM-320">
+                    <span class="filter__label-text">38 | M (60)</span>
+                </label>
+                <label class="filter__label" for="filterL-320">
+                    <input class="filter__mark" type="checkbox" name="filter" id="filterL-320">
+                    <span class="filter__label-text">40 | L (60)</span>
+                </label>
+                <label class="filter__label" for="filterXl-320">
+                    <input class="filter__mark" type="checkbox" name="filter" id="filterXl-320">
+                    <span class="filter__label-text">42 | XL (58)</span>
+                </label>
+                <label class="filter__label" for="filterXxl-320">
+                    <input class="filter__mark" type="checkbox" name="filter" id="filterXxl-320">
+                    <span class="filter__label-text">46 | XXL (13)</span>
+                </label>
+                <label class="filter__label" for="filterXxxl-320">
+                    <input class="filter__mark" type="checkbox" name="filter" id="filterXxxl-320">
+                    <span class="filter__label-text">48 | XХXL (4)</span>
+                </label>
+              </details>
+            <details class="filter__item">
+                <summary class="filter__name filter__name-order_2">Колір</summary>
+                <label class="filter__label" for="filterWhite-320">
+                    <input class="filter__mark" type="checkbox" name="filter" id="filterWhite-320" >
+                    <span class="filter__label-text">білий</span>
+                </label>
+                <label class="filter__label" for="filterBlack-320">
+                    <input class="filter__mark" type="checkbox" name="filter" id="filterBlack-320" >
+                    <span class="filter__label-text">чорний</span>
+                </label>
+                <label class="filter__label" for="filterBeige-320">
+                    <input class="filter__mark" type="checkbox" name="filter" id="filterBeige-320">
+                    <span class="filter__label-text">бежевий</span>
+                </label>
+                <label class="filter__label" for="filterGreen-320">
+                    <input class="filter__mark" type="checkbox" name="filter" id="filterGreen-320">
+                    <span class="filter__label-text">зелений</span>
+                </label>
+                <label class="filter__label" for="filterBlue-320">
+                    <input class="filter__mark" type="checkbox" name="filter" id="filterBlue-320">
+                    <span class="filter__label-text">синій</span>
+                </label>
+              </details>  
+            <details class="filter__item">
+                <summary class="filter__name filter__name-order_3">Сезон</summary>
+                <label class="filter__label" for="easy-320">
+                    <input class="filter__mark" type="checkbox" name="filter" id="easy-320">
+                    <span class="filter__label-text">Easy collection (3)</span>
+                </label>
+                <label class="filter__label" for="all-320">
+                    <input class="filter__mark" type="checkbox" name="filter" id="all-320">
+                    <span class="filter__label-text">Усі сезони (46)</span>
+                </label>
+              </details>  
+            <details class="filter__item">
+                <summary class="filter__name filter__name-order_4">Тканина</summary>
+                <label class="filter__label" for="linen-320">
+                    <input class="filter__mark" type="checkbox" name="filter" id="linen-320">
+                    <span class="filter__label-text">Льон (60)</span>
+                </label>
+                <label class="filter__label" for="sateen-320">
+                    <input class="filter__mark" type="checkbox" name="filter" id="sateen-320">
+                    <span class="filter__label-text">Сатин (1)</span>
+                </label>
+              </details>  
+            <details class="filter__item">
+                <summary class="filter__name filter__name-order_5">Рукав</summary>
+                <label class="filter__label" for="long-320">
+                    <input class="filter__mark" type="checkbox" name="filter" id="long-320">
+                    <span class="filter__label-text">Довгий рукав (49)</span>
+                </label>
+                <label class="filter__label" for="half-320">
+                    <input class="filter__mark" type="checkbox" name="filter" id="half-320">
+                    <span class="filter__label-text">3/4 рукав (11)</span>
+                </label>
+              </details> 
+    </aside>
+        <div class="catalog__container">
+        <section class="catalog__products">
+            <div class="products__sorting">
+                <div class="sorting__filter-container">
+                <div class="sorting__two">
+                    <img src="./images/sorting2.svg" alt="" class="soting__two-img">
+                    <img src="./images/sorting2.svg" alt="" class="soting__two-img">
+                    <img src="./images/sorting2.svg" alt="" class="soting__two-img">
+                    <img src="./images/sorting2.svg" alt="" class="soting__two-img">
+                </div>
+                <div class="sorting__three">
+                    <img src="./images/sorting3.svg" alt="" class="soting__three-img">
+                    <img src="./images/sorting3.svg" alt="" class="soting__three-img">
+                    <img src="./images/sorting3.svg" alt="" class="soting__three-img">
+                    <img src="./images/sorting3.svg" alt="" class="soting__three-img">
+                    <img src="./images/sorting3.svg" alt="" class="soting__three-img">
+                    <img src="./images/sorting3.svg" alt="" class="soting__three-img">
+                    <img src="./images/sorting3.svg" alt="" class="soting__three-img">
+                    <img src="./images/sorting3.svg" alt="" class="soting__three-img">
+                    <img src="./images/sorting3.svg" alt="" class="soting__three-img">
+                </div>
+                <div class="sorting__text-filter">Сортувати за:
+                <div class="sorting__filter">
+                    <details class="sorting__filter-item">
+                        <summary class="sorting__filter-name">новинки</summary>
+                      </details> 
+            </div>
+        </div>
+        </div>
+        <div class="catalog__title title">Жіночі вишиванки</div>
+        </div>
+        </section>
+        <ul class="catalog__items">
+            <li class="item__container">
+                <a class= "item__button" href="card.html">
+                    <div class="item__images">
+                        <img src="./images/catalog1.jpg" alt="" class="item__img">
+                        <img class="item__hover" src="./images/hover-catalog.jpg" alt="hover">
+                    </div>
+                <div class="item__text">Вишиванка з рослинним орнаментом Lito</div>
+                <div class="item__price">2 800 грн.</div></a>
+                </li>
+            <li class="item__container">
+                <a class= "item__button" href="#">
+                    <div class="item__images">
+                        <img src="./images/catalog2.jpg" alt="" class="item__img">
+                        <img class="item__hover" src="./images/hover-catalog.jpg" alt="hover">
+                    </div>
+                <div class="item__text">Вишиванка блакитного кольору з рослинним орнаментом Fialka</div>
+                <div class="item__price">3 400 грн.</div></a>
+                </li>
+            <li class="item__container">
+                <a class= "item__button" href="#">
+                    <div class="item__images">
+                        <img src="./images/catalog3.jpg" alt="" class="item__img">
+                        <img class="item__hover" src="./images/hover-catalog.jpg" alt="hover">
+                </div>
+                <div class="item__text">Лляна вишиванка з геометричним орнаментом Nezalezhni</div>
+                <div class="item__price">4 200 грн.</div></a>
+                </li>
+            <li class="item__container">
+                <a class= "item__button" href="#">
+                    <div class="item__images">
+                        <img src="./images/catalog4.jpg" alt="" class="item__img">
+                        <img class="item__hover" src="./images/hover-catalog.jpg" alt="hover">
+                    </div>
+                <div class="item__text">Вишиванка з рослинним орнаментом Kashtan</div>
+                <div class="item__price">3 800 грн.</div></a>
+                </li>
+            <li class="item__container">
+                <a class= "item__button" href="#">
+                    <div class="item__images">
+                        <img src="./images/catalog5.jpg" alt="" class="item__img">
+                        <img class="item__hover" src="./images/hover-catalog.jpg" alt="hover">
+                    </div>
+                <div class="item__text">Легка блузка вільного крою з орнаментом Indi</div>
+                <div class="item__price">3 800 грн.</div></a>
+                </li>
+            <li class="item__container">
+                <a class= "item__button" href="#">
+                    <div class="item__images">
+                        <img src="./images/catalog6.jpg" alt="" class="item__img">
+                        <img class="item__hover" src="./images/hover-catalog.jpg" alt="hover">
+                    </div>
+                <div class="item__text">Біла вишиванка вільного крою Svitanok</div>
+                <div class="item__price">2 980 грн.</div></a>
+                </li>
+        </ul>
+        </div>
+    </div>
+        <div class="pages">
+            <div class="pages__more"><a href="">Показати більше</a></div>
+            <div class="pages__next">
+                <a href="" class="pages__next-link">1</a>
+                <a href="" class="pages__next-link">2</a>
+                <a href="" class="pages__next-link">3</a>
+                <p class="pages__next-points">...</p>
+                <a href="" class="pages__next-link">6</a>
+                <a href="" class="pages__next-link">Наступна</a>
+            </div>
+        </div>
+        <div class="scroll">
+            <div class="scroll__link">
+                <a href="#"><img src="./images/scroll.svg" alt=""></a></div>
+        </div>
+        <div class="scroll__link-320">
+            <a href="#"><img src="./images/scroll-320.svg" alt=""></a>
+        </div>
+        <footer class="footer">
+            <div class="footer__logo logo">
+                <img src="./images/logo.svg" alt="">
+            </div>
+            <div class="footer__column-container">
+                <div class="footer__column-about">
+                    <a href="#" class="footer__link">Про нас</a>
+                    <a href="#" class="footer__link">Команда</a>
+                    <a href="#" class="footer__link">Блог</a>
+                    <a href="#" class="footer__link">Drabyna</a>
+                </div>
+                <div class="footer__column-about">
+                    <a href="#" class="footer__link">Цікава інформація</a>
+                    <a href="#" class="footer__link">Вакансії</a>
+                    <a href="#" class="footer__link">Доставка та оплата</a>
+                    <a href="#" class="footer__link">Етнодім Маніфест</a>
+                </div>
+                <div class="footer__column-contacts">
+                    <div class="footer__column-text footer__text">Контакти</div>
+                    <div class="footer__column-telephone footer__link">
+                        <a href="callto:+380978889292">+38 097 888 92 92</a>
+                    </div>
+                    <div class="footer__column-address footer__text">Україна, м. Київ, вул. Верхній Вал 58/28
+                    </div>
+                    <div class="footer__column-schedule footer__text">
+                        <p>пн-пт 10:00-20:00</p>
+                        <p>сб-нд 11:00-19:00</p>
+                    </div>
+                </div>
+                <div class="footer__column-socials">
+                    <div class="footer__column-text footer__text">Соціальні мережі</div>
+                    <div class="footer__socials-container">
+                    <a class="footer__socials-icons" href="#"></a><img src="./images/facebook.svg" alt="facebook">
+                    <a class="footer__socials-icons" href="#"></a><img src="./images/youtube.svg" alt="youtube">
+                    <a class="footer__socials-icons" href="#"></a><img src="./images/mail.svg" alt="mail">
+                    <a class="footer__socials-icons" href="#"></a><img src="./images/pinterest.svg" alt="pinterest">
+                    <a class="footer__socials-icons" href="#"></a><img src="./images/instagram.svg" alt="instagram">
+                    </div>
+                    <div class="footer__copyright footer__text">© «Етнодім» 2009-2021</div>
+                </div>
+            </div>
+            <div class="footer__copyright-320 footer__text">© «Етнодім» 2009-2021</div>
+        </footer>
+        <div id="popup__main" class="popup__main container">
+            <div class="popup__main-body">
+                <ul class="popup__main-menu">
+                    <li class="popup__main_menu-links"><a href="">жінкам</a></li>
+                    <li class="popup__main_menu-links"><a href="">чоловікам</a></li>
+                    <li class="popup__main_menu-links"><a href=""></a>дітям</li>
+                    <li class="popup__main_menu-links"><a href=""></a>аксесуари</li>
+                    <li class="popup__main_menu-links"><a href=""></a>дім</li>
+                </ul>
+                <div class="popup__main-columns">
+                    <div class="popup__main-column">
+                        <a href="" class="popup__main_column-link">Вишиті сукні</a>
+                        <a href="catalog.html" class="popup__main_column-link">Жіночі вишиванки</a>
+                        <a href="" class="popup__main_column-link">Конструктор вишиванки</a>
+                    </div>
+                    <div class="popup__main-column">
+                        <a href="" class="popup__main_column-link">Світшоти та светри</a>
+                        <a href="" class="popup__main_column-link">Футболки</a>
+                        <a href="" class="popup__main_column-link">Брюки та комбінезони</a>
+                    </div>
+                    <div class="popup__main-column">
+                        <a href="" class="popup__main_column-link">Пальта та куртки</a>
+                        <a href="" class="popup__main_column-link">Спідниці</a>
+                    </div>
+                </div>
+                <div class="popup__main-img">
+                    <img src="./images/popup_main.jpg" alt="photo">
+                </div>
+            </div>
+        </div>
+    </div>    
+</body>
+</html>

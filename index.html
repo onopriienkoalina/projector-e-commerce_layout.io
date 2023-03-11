@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header id="header" class="header__row container">
+            <nav class="header__menu">
+                    <div class="menu__burger">
+                    <input id="menu__toggle" type="checkbox" />
+                    <label class="menu__btn" for="menu__toggle">
+                        <span></span>
+                    </label>
+                    <ul class="menu__body">
+                        <li><a href="#popup__main" class="menu__item">Каталог</a></li>
+                        <li><a href="" class="menu__item">Знижки</a></li>
+                        <li><a href="" class="menu__item">Блог</a></li>
+                        <li><a href="" class="menu__item">Про нас</a></li>
+                        <div class="menu__burger-bottom">
+                            <a href="" class="menu__burger-language">UA</a>
+                            <a href="" class="menu__burger-language">RU</a>
+                            <a href="" class="menu__burger-language">EN</a>
+                            <img src="./images/burger-img.svg" class="menu__burger-img">
+                            <a href="" class="menu__burger-currency"><img src="./images/burger_uah.svg"></a>
+                            <a href="" class="menu__burger-currency"><img src="./images/burger$.svg"></a>
+                            <a href="" class="menu__burger-currency"><img src="./images/burger_euro.svg"></a>
+                        </div>
+                    </ul>
+                </div>
+            </nav>
+            <div class="header__logo logo">
+                <img src="./images/logo.svg" alt="">
+            </div>
+            <div class="header__column">
+                <div class="column__language">
+                    <a href="#">UA</a>
+                </div>
+                <div class="column__currency">
+                    <a href="#"><img src="./images/currensy.svg" alt=""></a>
+                </div>
+                <div class="column__telephone">
+                    <a href="callto:+380978889292">+38 097 888 92 92</a>
+                </div>
+                <label class="column__search">
+                    <a href="#"><img src="./images/search.svg" alt="search"></a>
+                    <input class="search__txt" type="text" name="search" placeholder=""/>
+                </label>
+                <div class="column__cart">
+                    <a href="cart.html"><img src="./images/cart.svg" alt="" class="cart__img"></a>            
+                </div>
+            </div>
+        </header>
+        <main class="page">
+            <div class="page-container container">
+                <section class="page__main-block">
+                    <div class="main-block">
+                        <div class="main-block__body">
+                            <h1 class="main-block__title">більше ніж просто одяг</h1>
+                            <div class="main-block__text">Нова літня колекція</div>
+                            <button class="main-block__button button"><a href="catalog.html" class="button__link">дивитись колекцію</a></button>
+                        </div>
+                    </div>
+                    <div class="main-block__image ibg">
+                        <img src="./images/main-block.jpg" alt="cover">
+                    </div>
+                    <div class="main-block__image-320 ibg">
+                        <img src="./images/main_img-320.jpg" alt="cover">
+                    </div>
+                </section>
+            </div>
+            <div class="main-block__scroll">
+                <div class="main-block__scroll-link">
+                    <a href="#"><img class="main-block__scroll-white" src="./images/main-block_scroll-white.svg"></a>
+                    <a href="#"><img class="main-block__scroll-red" src="./images/main-block__scroll.svg"></a>
+                </div>
+                <div class="main-block__scroll-link320">
+                    <a href="#"><img class="main-block__scroll-white" src="./images/main-block_white320.svg"></a>
+                    <a href="#"><img src="./images/main-block_scroll320.svg"></a>
+                </div>
+            </div>
+            <section class="page__service container">
+                <div class="service__images">
+                    <div class="service__image-container">
+                        <img src="./images/service1.jpg" alt="photo" class="service__img">
+                    </div>
+                    <div class="service__image-container2">
+                        <img src="./images/service2.jpg" alt="photo" class="service__img">
+                    </div>
+                </div>
+                <h2 class="service__text title"><span class="text__white-320"><span class="text__white"><span class="text__white1">e</span></span>tno</span>dim - магазин <span class="text__white"><span class="text__white-320">диз</span>а</span><span class="text__gradient">й</span>нерських вишиванок <span class="text__white">ручно</span><span class="text__white-320">ї робо</span><span class="text__gradient-320-t">т</span>и та етні<span class="text__white">чного</span> <span class="text__gradient-320-o">о</span><span class="text__white-320">дягу</span></h2>
+            </section>
+            <section class="page__slider card__slider">
+                <div class="slider__top">
+                    <div class="slider__tittle title">нові надходження</div>
+                    <div class="slider__control-container">
+                        <a class="slider__control slider__control_prev" href="#" role="button" data-slide="prev"><img src="./images/slider-prev.svg" alt="back"></a>
+                        <a class="slider__control slider__control_next" href="#" role="button" data-slide="next"><img src="./images/slider-next.svg" alt="next"></a>
+                    </div>
+                </div>
+                <div class="slider__items">
+                    <div class="slider__item">
+                        <div class="slider__img-container">
+                            <img class="slider__img" src="./images/page_slider-1.jpg" alt="">
+                            <img class="slider-item__hover" src="./images/slider-hover.jpg" alt="hover">
+                        </div>
+                        <div class="item__text">Набір для створення вишивки Home Tree Green</div>
+                        <div class="item__price">2 120 грн.</div>
+                    </div>
+                    <div class="slider__item">
+                        <div class="slider__img-container">
+                            <img class="slider__img" src="./images/page_slider-2.jpg" alt="">
+                            <img class="slider-item__hover" src="./images/slider-hover.jpg" alt="hover">
+                        </div>
+                        <div class="item__text">Легка блузка вільного крою з орнаментом Indi</div>
+                        <div class="item__price">3 800 грн.</div>
+                    </div>
+                    <div class="slider__item">
+                        <div class="slider__img-container">
+                            <img class="slider__img" src="./images/page_slider-3.jpg" alt="">
+                            <img class="slider-item__hover" src="./images/slider-hover.jpg" alt="hover">
+                        </div>
+                        <div class="item__text">Чоловіча лльна сорочка з вишивкою Sky</div>
+                        <div class="item__price">2 800 грн.</div>
+                    </div>
+                    <div class="slider__item">
+                        <div class="slider__img-container">
+                            <img class="slider__img" src="./images/page_slider-4.jpg" alt="">
+                            <img class="slider-item__hover" src="./images/slider-hover.jpg" alt="hover">
+                        </div>
+                        <div class="item__text">Легка блузка вільного крою з орнаментом Indi</div>
+                        <div class="item__price">3 800 грн.</div>
+                    </div>
+                </div>
+            </section>
+            <section class="page__slider-320 card__slider-320">
+                <div class="slider__tittle title">нові надходження</div>
+                <div class="slider__control-container-320">
+                    <a class="slider__control slider__control_prev-320" href="#" role="button" data-slide="prev"><img src="./images/arrow-prev_slider-320.svg" alt="back"></a>
+                    <a class="slider__control slider__control_next-320" href="#" role="button" data-slide="next"><img src="./images/arrow-slider_next-320.svg" alt="next"></a>
+                </div>
+                <div class="slider__item slider__item-320">
+                    <div class="slider__img-container">
+                        <img class="slider__img" src="./images/page_slider-2.jpg" alt="">
+                        <img class="slider-item__hover" src="./images/slider-hover.jpg" alt="hover">
+                    </div>
+                    <div class="item__text item__text-320 main__item-text">Легка блузка вільного крою з орнаментом Indi</div>
+                    <div class="item__price">3 800 грн.</div>
+                </div>
+            </section>
+            <section class="page__benefits">
+                <picture class="benefits__image ibg">
+                    <source class="benefits__image-320" media="(max-width: 601px)" srcset="./images/benefits-image_320.jpg">
+                    <img src="./images/benefits-image.jpg" alt="cover">
+                </picture>
+                <div class="benefits__container">
+                    <div class="benefits__item-container">
+                        <div class="benefits__text-container">
+                            <h5 class="benefits__item-subtitle">etnodim</h5>
+                            <h2 class="benefits__item-title title">капсульна колекція до дня вишиванки </h2>
+                            <p class="benefits__item-text item__text">Лімітована серія нетипових вишиванок Etnodim створена спеціально до Дня вишиванки.</p>
+                            <p class="benefits__item-text item__text">Поряд із традиційною вишивкою на виробах з’явилися «нові символи».</p>
+                            <button class="benefits__item-button button"><a href="">переглянути</a></button>
+                        </div>
+                    </div>
+                    <div class="benefits__item-container">
+                        <div class="benefits__img-container">
+                        <picture class="benefits__item-image">
+                            <source class="benefits__item-320" media="(max-width: 600px)" srcset="./images/benefits_photo-320.jpg">
+                            <img src="./images/benefits-photo.jpg" alt="cover">
+                        </picture>
+                        </div>
+                    </div>
+                </div>
+        </main>
+        <div id="popup__main" class="popup__main container">
+            <div class="popup__main-body">
+                <ul class="popup__main-menu">
+                    <li class="popup__main_menu-links"><a href="">жінкам</a></li>
+                    <li class="popup__main_menu-links"><a href="">чоловікам</a></li>
+                    <li class="popup__main_menu-links"><a href=""></a>дітям</li>
+                    <li class="popup__main_menu-links"><a href=""></a>аксесуари</li>
+                    <li class="popup__main_menu-links"><a href=""></a>дім</li>
+                </ul>
+                <div class="popup__main-columns">
+                    <div class="popup__main-column">
+                        <a href="" class="popup__main_column-link">Вишиті сукні</a>
+                        <a href="catalog.html" class="popup__main_column-link">Жіночі вишиванки</a>
+                        <a href="" class="popup__main_column-link">Конструктор вишиванки</a>
+                    </div>
+                    <div class="popup__main-column">
+                        <a href="" class="popup__main_column-link">Світшоти та светри</a>
+                        <a href="" class="popup__main_column-link">Футболки</a>
+                        <a href="" class="popup__main_column-link">Брюки та комбінезони</a>
+                    </div>
+                    <div class="popup__main-column">
+                        <a href="" class="popup__main_column-link">Пальта та куртки</a>
+                        <a href="" class="popup__main_column-link">Спідниці</a>
+                    </div>
+                </div>
+                <div class="popup__main-img">
+                    <img src="./images/popup_main.jpg" alt="photo">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

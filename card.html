@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header id="header" class="header__row container">
+            <nav class="header__menu">
+                <div class="menu__burger">
+                    <input id="menu__toggle" type="checkbox" />
+                    <label class="menu__btn" for="menu__toggle">
+                      <span></span>
+                    </label>
+                    <ul class="menu__body">
+                        <li><a href="#popup__main" class="menu__item">Каталог</a></li>
+                        <li><a href="" class="menu__item">Знижки</a></li>
+                        <li><a href="" class="menu__item">Блог</a></li>
+                        <li><a href="" class="menu__item">Про нас</a></li>
+                    </ul>
+            </nav>
+            <div class="header__logo logo">
+                <img src="./images/logo.svg" alt="">
+            </div>
+            <div class="header__column">
+                <div class="column__language">
+                    <a href="#">UA</a>
+                </div>
+                <div class="column__currency">
+                    <a href="#"><img src="./images/currensy.svg" alt=""></a>
+                </div>
+                <div class="column__telephone">
+                    <a href="callto:+380978889292">+38 097 888 92 92</a>
+                </div>
+                <label class="column__search">
+                    <a href="#"><img src="./images/search.svg" alt="search"></a>
+                    <input class="search__txt" type="text" name="search" placeholder=""/>
+                </label>
+                <div class="column__cart">
+                    <a href="cart.html"><img src="./images/cart.svg" alt="" class="cart__img"></a>            
+                </div>
+            </div>
+        </header>
+           <nav class="breadcrumbs container">
+            <ul class="breadcrumbs__list">
+                <li class="breadcrumbs__item"><a href="main.html">Головна</a></li>
+                <li class="breadcrumbs__item"><a href="#">Жінкам</a></li>
+                <li class="breadcrumbs__item"><a href="catalog.html">Жіночі вишиванки</a></li>
+                <li class="breadcrumbs__item"><a href="#">Вишиванка з рослинним орнаментом Lito</a></li>
+            </ul>
+        </nav>
+        <nav class="breadcrumbs-320">
+            <a class="breadcrumbs-320__link" href="http://127.0.0.1:5500/catalog.html"><img class="breadcrumbs-320__img" src="./images/breadcrumbs-arrow.svg" alt="back">Жіночі вишиванки</a>
+        </nav>
+        <div class="card__container">
+            <div class="card__column">
+                <div class="card__images-container">
+                    <img src="./images/image1.jpg" alt="shirt" class="card__image card__image1">
+                    <img src="./images/image2.jpg" alt="shirt" class="card__image card__image2">
+                    <img src="./images/image3.jpg" alt="shirt" class="card__image card__image3">
+                    <img src="./images/image4.jpg" alt="shirt" class="card__image card__image4">
+                    <img src="./images/image5.jpg" alt="shirt" class="card__image card__image5">
+                </div>
+                <div class="card__slider-container">
+                    <div class="slider__control-container">
+                        <a class="slider__control slider__control_prev" href="#" role="button" data-slide="prev"><img src="./images/slider-prev_320.svg" alt="back"></a>
+                        <a class="slider__control slider__control_next" href="#" role="button" data-slide="next"><img src="./images/slider-next_320.svg" alt="next"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="card__column">
+                <div class="card__information-container">
+                    <small class="card__subtitle">entodim</small>
+                    <h2 class="card__title">Вишиванка з рослинним орнаментом Lito</h2>
+                    <div class="card__quantity-container">
+                    <p class="card__color">Колір: бежевий</p>
+                    <div class="card__quantity">
+                            <input class="card__button" type="button" value="-" id="card__button-minus">
+                            <img src="./images/bx_bx-minus.svg" alt="shirt"class="card__button-new">
+                            <span class="card__step-new">1</span>
+                            <input class="card__step" type="number" min="1" max="10" id="num_count" name="quantity" value="1" title="Qty">
+                            <img src="./images/bx_bx-plus.svg" alt="shirt"class="card__button-new">
+                            <input class="card__button" type="button" value="+" id="card__button-plus">
+                      </div>
+                    </div>
+                    <div class="card__size-container">
+                        <div class="card__size-group">
+                            <input id="radio-1" type="radio" name="radio" value="1" checked>
+                            <label for="radio-1">32 | XXS</label>
+                        </div>
+                        <div class="card__size-group">
+                            <input id="radio-2" type="radio" name="radio" value="2">
+                            <label for="radio-2">34 | XS</label>
+                        </div>
+                        <div class="card__size-group">
+                            <input id="radio-3" type="radio" name="radio" value="3">
+                            <label for="radio-3">36 | S</label>
+                        </div>
+                        <div class="card__size-group">
+                            <input id="radio-4" type="radio" name="radio" value="4">
+                            <label for="radio-4">38 | M</label>
+                        </div>
+                        <div class="card__size-group">
+                            <input id="radio-5" type="radio" name="radio" value="5">
+                            <label for="radio-5">40 | L</label>
+                        </div>
+                        <div class="card__size-group">
+                            <input id="radio-6" type="radio" name="radio" value="6">
+                            <label for="radio-6">42 | XL</label>
+                        </div>
+                    </div>
+                    <div class="card__size-container-320">
+                        <div class="card__size-group">
+                            <input id="radio-1-320" type="radio" name="radio" value="1" checked>
+                            <label for="radio-1-320">32 XXS</label>
+                        </div>
+                        <div class="card__size-group">
+                            <input id="radio-2-320" type="radio" name="radio" value="2">
+                            <label for="radio-2-320">34 XS</label>
+                        </div>
+                        <div class="card__size-group">
+                            <input id="radio-3-320" type="radio" name="radio" value="3">
+                            <label for="radio-3-320">36 S</label>
+                        </div>
+                        <div class="card__size-group">
+                            <input id="radio-4-320" type="radio" name="radio" value="4">
+                            <label for="radio-4-320">38 M</label>
+                        </div>
+                        <div class="card__size-group">
+                            <input id="radio-5-320" type="radio" name="radio" value="5">
+                            <label for="radio-5-320">40 L</label>
+                        </div>
+                        <div class="card__size-group">
+                            <input id="radio-6-320" type="radio" name="radio" value="6">
+                            <label for="radio-6-320">42 XL</label>
+                        </div>
+                    </div>
+                    <p class="card__size">Таблиця розмірів</p>
+                    <div class="card__price">2 800 грн.</div>
+                    <button class="card__button-red button"><a href="#popup" class="button__link">купити</a></button>
+                    <div class="card__acordion">
+                        <div class="accordion__container">
+                            <details class="accordion__item">
+                                <summary class="acordion__question">Про товар</summary>
+                                <div class="acordion__answer"><p>Тепло, на яке кожен так довго чекав, здається прийшло. А разом з ним нова  вишиванка під назвою LITO.</p>
+                                    <p class="acordion__paragraph">Створена в ніжному кремовому відтінку на тлі якого щедро розмістились польові квіти. Фактурні та різноманітні, кольорові, унікальні-саме такі, як спогади про літо дизайнерки Лілії Касянчук, котра через вишивку передала спогади із власного дитинства.</p>
+                                    <p class="acordion__paragraph">Сорочка стане невід’ємною частиною гардеробу не тільки на весняно- літній сезон, але й поверне вас до спогадів про літо в холодну пору року.</p>
+                                    <p class="acordion__paragraph">Якщо Ви не впевнені щодо розміру - зверніться до наших менеджерів, ми завжди раді Вам допомогти:)</p></div>
+                              </details>
+                        </div>
+                        <div class="accordion__container">
+                            <details class="accordion__item">
+                                <summary class="acordion__question">Склад та догляд</summary>
+                                <div class="acordion__answer"></div>
+                              </details>
+                        </div>
+                        <div class="accordion__container">
+                            <details class="accordion__item">
+                                <summary class="acordion__question">Доставка та оплата</summary>
+                                <div class="acordion__answer"></div>
+                              </details>
+                        </div>
+                        <div class="accordion__container">
+                            <details class="accordion__item">
+                                <summary class="acordion__question">Відгуки</summary>
+                                <div class="acordion__answer"></div>
+                              </details>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="card__slider">
+                <div class="slider__top">
+                    <div class="slider__tittle title">вам може сподобатися</div>
+                    <div class="slider__control-container">
+                        <a class="slider__control slider__control_prev" href="#" role="button" data-slide="prev"><img src="./images/slider-prev.svg" alt="back"></a>
+                        <a class="slider__control slider__control_next" href="#" role="button" data-slide="next"><img src="./images/slider-next.svg" alt="next"></a>
+                    </div>
+                </div>
+                <div class="slider__items">
+                    <div class="slider__item">
+                        <div class="slider__img-container">
+                            <img class="slider__img" src="./images/slider1.jpg" alt="">
+                            <img class="slider-item__hover" src="./images/slider-hover.jpg" alt="hover">
+                        </div>
+                        <div class="item__text">Льняна вишиванка вільного крою Vintage Red</div>
+                        <div class="item__price">4 200 грн.</div>
+                    </div>
+                    <div class="slider__item">
+                        <div class="slider__img-container">
+                            <img class="slider__img" src="./images/slider2.jpg" alt="">
+                            <img class="slider-item__hover" src="./images/slider-hover.jpg" alt="hover">
+                        </div>
+                        <div class="item__text">Легка блузка вільного крою з орнаментом Indi</div>
+                        <div class="item__price">3 800 грн.</div>
+                    </div>
+                    <div class="slider__item">
+                        <div class="slider__img-container">
+                            <img class="slider__img" src="./images/slider3.jpg" alt="">
+                            <img class="slider-item__hover" src="./images/slider-hover.jpg" alt="hover">
+                        </div>
+                        <div class="item__text">Лляна вишиванка з геометричним орнаментом Nezalezhni</div>
+                        <div class="item__price">4 200 грн.</div>
+                    </div>
+                    <div class="slider__item">
+                        <div class="slider__img-container">
+                            <img class="slider__img" src="./images/slider4.jpg" alt="">
+                            <img class="slider-item__hover" src="./images/slider-hover.jpg" alt="hover">
+                        </div>
+                        <div class="item__text">Лляна вишита сорочка чорного кольору SLOVO BLACK</div>
+                        <div class="item__price">4 200 грн.</div>
+                    </div>
+                </div>
+                <div class="slider__bottom">
+                    <div class="slider__long-line"></div>
+                    <div class="slider__short-line"></div>
+                </div>
+            </div>
+            <div class="card__slider-320">
+                <div class="slider__tittle title">вам може сподобатися</div>
+                <div class="slider__control-container-320">
+                    <a class="slider__control slider__control_prev-320" href="#" role="button" data-slide="prev"><img src="./images/arrow-prev_slider-320.svg" alt="back"></a>
+                    <a class="slider__control slider__control_next-320" href="#" role="button" data-slide="next"><img src="./images/arrow-slider_next-320.svg" alt="next"></a>
+                </div>
+                <div class="slider__item slider__item-320">
+                    <div class="slider__img-container">
+                        <img class="slider__img" src="./images/slider1.jpg" alt="">
+                        <img class="slider-item__hover" src="./images/slider-hover.jpg" alt="hover">
+                    </div>
+                    <div class="item__text item__text-320">Льняна вишиванка вільного крою Vintage Red</div>
+                    <div class="item__price">4 200 грн.</div>
+                </div>
+            </div>
+            <div class="scroll">
+                <div class="scroll__link">
+                    <a href="#"><img src="./images/scroll.svg" alt=""></a></div>
+            </div>
+            <div class="scroll__link-320">
+                <a href="#"><img src="./images/scroll-320.svg" alt=""></a>
+            </div>
+            <footer class="footer">
+                <div class="footer__logo logo">
+                    <img src="./images/logo.svg" alt="">
+                </div>
+                <div class="footer__column-container">
+                    <div class="footer__column-about">
+                        <a href="#" class="footer__link">Про нас</a>
+                        <a href="#" class="footer__link">Команда</a>
+                        <a href="#" class="footer__link">Блог</a>
+                        <a href="#" class="footer__link">Drabyna</a>
+                    </div>
+                    <div class="footer__column-about">
+                        <a href="#" class="footer__link">Цікава інформація</a>
+                        <a href="#" class="footer__link">Вакансії</a>
+                        <a href="#" class="footer__link">Доставка та оплата</a>
+                        <a href="#" class="footer__link">Етнодім Маніфест</a>
+                    </div>
+                    <div class="footer__column-contacts">
+                        <div class="footer__column-text footer__text">Контакти</div>
+                        <div class="footer__column-telephone footer__link">
+                            <a href="callto:+380978889292">+38 097 888 92 92</a>
+                        </div>
+                        <div class="footer__column-address footer__text">Україна, м. Київ, вул. Верхній Вал 58/28
+                        </div>
+                        <div class="footer__column-schedule footer__text">
+                            <p>пн-пт 10:00-20:00</p>
+                            <p>сб-нд 11:00-19:00</p>
+                        </div>
+                    </div>
+                    <div class="footer__column-socials">
+                        <div class="footer__column-text footer__text">Соціальні мережі</div>
+                        <div class="footer__socials-container">
+                        <a class="footer__socials-icons" href="#"></a><img src="./images/facebook.svg" alt="facebook">
+                        <a class="footer__socials-icons" href="#"></a><img src="./images/youtube.svg" alt="youtube">
+                        <a class="footer__socials-icons" href="#"></a><img src="./images/mail.svg" alt="mail">
+                        <a class="footer__socials-icons" href="#"></a><img src="./images/pinterest.svg" alt="pinterest">
+                        <a class="footer__socials-icons" href="#"></a><img src="./images/instagram.svg" alt="instagram">
+                        </div>
+                        <div class="footer__copyright footer__text">© «Етнодім» 2009-2021</div>
+                    </div>
+                </div>
+                <div class="footer__copyright-320 footer__text">© «Етнодім» 2009-2021</div>
+            </footer>
+        <div id="popup" class="popup">
+            <div class="popup__body">
+                <div class="popup__content">
+                    <a href="#header" class="popup__close"><img src="./images/popup-close.svg" alt=""></a>
+                    <div class="popup__title">Товар додано до кошика</div>
+                    <div class="popup__column-container">
+                        <div class="popup__column">
+                            <img src="./images/popup-img.jpg" alt="photo" class="popup__img">
+                        </div>
+                        <div class="popup__column">
+                            <p class="popup__text">Вишиванка з рослинним орнаментом Lito</p>
+                            <div class="popup__information-column-container">
+                            <div class="popup__information-column">
+                                <span class="popup__information">Колір</span>
+                                <span class="popup__information">Розмір</span>
+                                <span class="popup__information">Кількість</span>
+                            </div>
+                            <div class="popup__information-column">
+                                <span class="popup__information">бежевий</span>
+                                <select class="popup__information" name="user_profile_size_1">
+                                    <option value="1">32 | XXS</option>
+                                    <option value="2">34 | XS</option>
+                                    <option value="3">36 | S</option>
+                                    <option value="4">38 | M</option>
+                                    <option value="5">40 | L</option>
+                                    <option value="6">42 | XL</option>
+                                  </select>
+                                <select class="popup__information" name="user_profile_size_1">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                </select>
+                            </div>
+                        </div>
+                            <div class="popup__price">2 800 грн.</div>
+                        </div>
+                    </div>
+                    <div class="popup__total-container">
+                        <div class="popup__total-text">До сплати</div>
+                        <div class="popup__total">2 800 грн.</div>
+                    </div>
+                    <div class="popup__links-container">
+                        <a href="catalog.html" class="popup__link link">продовжити покупки</a>
+                        <button class="popup__button button"><a href="cart.html">перейти до кошика</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="popup__main" class="popup__main container">
+            <div class="popup__main-body">
+                <ul class="popup__main-menu">
+                    <li class="popup__main_menu-links"><a href="">жінкам</a></li>
+                    <li class="popup__main_menu-links"><a href="">чоловікам</a></li>
+                    <li class="popup__main_menu-links"><a href=""></a>дітям</li>
+                    <li class="popup__main_menu-links"><a href=""></a>аксесуари</li>
+                    <li class="popup__main_menu-links"><a href=""></a>дім</li>
+                </ul>
+                <div class="popup__main-columns">
+                    <div class="popup__main-column">
+                        <a href="" class="popup__main_column-link">Вишиті сукні</a>
+                        <a href="catalog.html" class="popup__main_column-link">Жіночі вишиванки</a>
+                        <a href="" class="popup__main_column-link">Конструктор вишиванки</a>
+                    </div>
+                    <div class="popup__main-column">
+                        <a href="" class="popup__main_column-link">Світшоти та светри</a>
+                        <a href="" class="popup__main_column-link">Футболки</a>
+                        <a href="" class="popup__main_column-link">Брюки та комбінезони</a>
+                    </div>
+                    <div class="popup__main-column">
+                        <a href="" class="popup__main_column-link">Пальта та куртки</a>
+                        <a href="" class="popup__main_column-link">Спідниці</a>
+                    </div>
+                </div>
+                <div class="popup__main-img">
+                    <img src="./images/popup_main.jpg" alt="photo">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

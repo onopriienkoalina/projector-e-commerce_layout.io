@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header id="header" class="header__row container">
+            <nav class="header__menu">
+                <div class="menu__burger">
+                    <input id="menu__toggle" type="checkbox" />
+                    <label class="menu__btn" for="menu__toggle">
+                      <span></span>
+                    </label>
+                    <ul class="menu__body">
+                        <li><a href="#popup__main" class="menu__item">Каталог</a></li>
+                        <li><a href="" class="menu__item">Знижки</a></li>
+                        <li><a href="" class="menu__item">Блог</a></li>
+                        <li><a href="" class="menu__item">Про нас</a></li>
+                    </ul>
+            </nav>
+            <div class="header__logo logo">
+                <img src="./images/logo.svg" alt="">
+            </div>
+            <div class="header__column">
+                <div class="column__language">
+                    <a href="#">UA</a>
+                </div>
+                <div class="column__currency">
+                    <a href="#"><img src="./images/currensy.svg" alt=""></a>
+                </div>
+                <div class="column__telephone">
+                    <a href="callto:+380978889292">+38 097 888 92 92</a>
+                </div>
+                <label class="column__search">
+                    <a href="#"><img src="./images/search.svg" alt="search"></a>
+                    <input class="search__txt" type="text" name="search" placeholder=""/>
+                </label>
+                <div class="column__cart">
+                    <a href="cart.html"><img src="./images/cart.svg" alt="" class="cart__img"></a>            
+                </div>
+            </div>
+        </header>
+           <nav class="breadcrumbs container">
+            <ul class="breadcrumbs__list">
+                <li class="breadcrumbs__item"><a href="main.html">Головна</a></li>
+                <li class="breadcrumbs__item"><a href="#">Жінкам</a></li>
+                <li class="breadcrumbs__item"><a href="catalog.html">Жіночі вишиванки</a></li>
+                <li class="breadcrumbs__item"><a href="card.html">Вишиванка з рослинним орнаментом Lito</a></li>
+                <li class="breadcrumbs__item"><a href="#">Кошик</a></li>
+            </ul>
+        </nav>
+        <nav class="breadcrumbs-320">
+            <a class="breadcrumbs-320__link" href="card.html"><img class="breadcrumbs-320__img" src="./images/breadcrumbs-arrow.svg" alt="back">Вишиванка з рослинним орнаментом Lito</a>
+        </nav>
+        <div class="cart__container container">
+            <div class="cart__information">
+                <div class="cart__information-column">
+                    <div class="cart__img">
+                        <img src="./images/cart_img.jpg" alt="shirt" class="cart__img">
+                    </div>
+                    <div class="cart__components">
+                        <div class="cart__title">Вишиванка з рослинним орнаментом Lito</div>
+                        <div class="cart__description-container">
+                            <div class="cart__description">
+                                <span class="cart__description-information">Колір:</span>
+                                <span class="cart__description-information">Розмір:</span>
+                            </div>
+                            <div class="cart__product">
+                                <span class="cart__product-information">бежевий</span>
+                                <select class="cart__product-information" name="user_profile_size_1">
+                                    <option value="1">32 | XXS</option>
+                                    <option value="2">34 | XS</option>
+                                    <option value="3">36 | S</option>
+                                    <option value="4">38 | M</option>
+                                    <option value="5">40 | L</option>
+                                    <option value="6">42 | XL</option>
+                                  </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart__information-column">
+                    <div class="cart__quantity-container">
+                        <span class="cart__name">Ціна</span>
+                        <span class="cart__price cart__price1">2 800 грн.</span>
+                    </div>
+                    <div class="cart__quantity-container">
+                        <span class="cart__name">Кількість</span>
+                        <div class="cart__quantity">
+                            <input class="card__button" type="button" value="-" id="cart__button-minus">
+                            <img src="./images/cart_button-minus.svg" alt="shirt"class="cart__button-new">
+                            <span class="card__step-new">1</span>
+                            <input class="card__step" type="number" min="1" max="10" id="num_count" name="quantity" value="1" title="Qty">
+                            <img src="./images/cart_button-plus.svg" alt="shirt"class="cart__button-new">
+                            <input class="card__button" type="button" value="+" id="cart__button-plus">
+                      </div>
+                      <div class="cart__quantity-320">
+                        <input class="card__button" type="button" value="-" id="cart__button-minus">
+                        <img src="./images/cart-qantity_320.svg" alt="shirt"class="cart__button-new">
+                        <span class="card__step-new">1</span>
+                        <input class="card__step" type="number" min="1" max="10" id="num_count" name="quantity" value="1" title="Qty">
+                        <img src="./images/cart-quantity-320plus.svg" alt="shirt"class="cart__button-new">
+                        <input class="card__button" type="button" value="+" id="cart__button-plus">
+                  </div>
+                    </div>
+                    <div class="cart__quantity-container">
+                        <span class="cart__name">Сума</span>
+                        <span class="cart__price">2 800 грн.</span>
+                    </div>
+                    <div class="cart__reset">
+                        <img src="./images/cart_reset.svg" alt="reset" class="cart__reset-img">
+                    </div>
+                </div>
+            </div>
+            <div class="cart__line"></div>
+            <div class="cart__total">
+                <div class="cart__total-column">
+                    <div class="cart__payable">До сплати</div>
+                    <div class="cart__price-red">2 800 грн.</div>
+                </div>
+                <div class="cart__total-column cart__total-column2">
+                    <button class="cart__button button">оформити замовлення</button>
+                    <a href="catalog.html" class="cart__link link">продовжити покупки</a>
+                </div>
+            </div>
+            <div class="cart__text">
+                <p class="cart__text-part">Не турбуйтесь якщо вам не підійде розмір, всі моделі мають різний крій: одні маломірні, інші повнорозмірні. На кожен наш товар розповсюджується гарантія, яка дозволяє обміняти або повернути річ протягом 31го дня після дати покупки.</p>
+                <p class="cart__text-part">Таке повернення можливе за умови, якщо товар не був у використанні. Зверніться до менеджера магазину, він надасть вам більш детальну інформацію :)</p>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="footer__logo logo">
+                <img src="./images/logo.svg" alt="">
+            </div>
+            <div class="footer__column-container">
+                <div class="footer__column-about">
+                    <a href="#" class="footer__link">Про нас</a>
+                    <a href="#" class="footer__link">Команда</a>
+                    <a href="#" class="footer__link">Блог</a>
+                    <a href="#" class="footer__link">Drabyna</a>
+                </div>
+                <div class="footer__column-about">
+                    <a href="#" class="footer__link">Цікава інформація</a>
+                    <a href="#" class="footer__link">Вакансії</a>
+                    <a href="#" class="footer__link">Доставка та оплата</a>
+                    <a href="#" class="footer__link">Етнодім Маніфест</a>
+                </div>
+                <div class="footer__column-contacts">
+                    <div class="footer__column-text footer__text">Контакти</div>
+                    <div class="footer__column-telephone footer__link">
+                        <a href="callto:+380978889292">+38 097 888 92 92</a>
+                    </div>
+                    <div class="footer__column-address footer__text">Україна, м. Київ, вул. Верхній Вал 58/28
+                    </div>
+                    <div class="footer__column-schedule footer__text">
+                        <p>пн-пт 10:00-20:00</p>
+                        <p>сб-нд 11:00-19:00</p>
+                    </div>
+                </div>
+                <div class="footer__column-socials">
+                    <div class="footer__column-text footer__text">Соціальні мережі</div>
+                    <div class="footer__socials-container">
+                    <a class="footer__socials-icons" href="#"></a><img src="./images/facebook.svg" alt="facebook">
+                    <a class="footer__socials-icons" href="#"></a><img src="./images/youtube.svg" alt="youtube">
+                    <a class="footer__socials-icons" href="#"></a><img src="./images/mail.svg" alt="mail">
+                    <a class="footer__socials-icons" href="#"></a><img src="./images/pinterest.svg" alt="pinterest">
+                    <a class="footer__socials-icons" href="#"></a><img src="./images/instagram.svg" alt="instagram">
+                    </div>
+                    <div class="footer__copyright footer__text">© «Етнодім» 2009-2021</div>
+                </div>
+            </div>
+            <div class="footer__copyright-320 footer__text">© «Етнодім» 2009-2021</div>
+        </footer>
+        <div id="popup__main" class="popup__main container">
+            <div class="popup__main-body">
+                <ul class="popup__main-menu">
+                    <li class="popup__main_menu-links"><a href="">жінкам</a></li>
+                    <li class="popup__main_menu-links"><a href="">чоловікам</a></li>
+                    <li class="popup__main_menu-links"><a href=""></a>дітям</li>
+                    <li class="popup__main_menu-links"><a href=""></a>аксесуари</li>
+                    <li class="popup__main_menu-links"><a href=""></a>дім</li>
+                </ul>
+                <div class="popup__main-columns">
+                    <div class="popup__main-column">
+                        <a href="" class="popup__main_column-link">Вишиті сукні</a>
+                        <a href="catalog.html" class="popup__main_column-link">Жіночі вишиванки</a>
+                        <a href="" class="popup__main_column-link">Конструктор вишиванки</a>
+                    </div>
+                    <div class="popup__main-column">
+                        <a href="" class="popup__main_column-link">Світшоти та светри</a>
+                        <a href="" class="popup__main_column-link">Футболки</a>
+                        <a href="" class="popup__main_column-link">Брюки та комбінезони</a>
+                    </div>
+                    <div class="popup__main-column">
+                        <a href="" class="popup__main_column-link">Пальта та куртки</a>
+                        <a href="" class="popup__main_column-link">Спідниці</a>
+                    </div>
+                </div>
+                <div class="popup__main-img">
+                    <img src="./images/popup_main.jpg" alt="photo">
+                </div>
+            </div>
+        </div>
+    </div> 
+</body>
+</html>
